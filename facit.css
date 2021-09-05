@@ -4,29 +4,6 @@
 	box-sizing: border-box;
 }
 
-/* Börja med dessa media queries */
-
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-	body {
-		background-color: #f09a9d; /* Red */
-	}
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-	body {
-		background-color: #f5cf8e; /* Yellow */
-	}
-}
-
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
-	body {
-		background-color: #384b61; /* Blue */
-	}
-}
-
 .page {
 	display: flex;
 	flex-wrap: wrap;
@@ -39,6 +16,49 @@
 	justify-content: center;
 	align-items: center;
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 520px) {
+	body {
+		background-color: #f09a9d; /* Red */
+	}
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 521px) and (max-width: 960px) {
+	.sign-up,
+	.feature-1,
+	.feature-2,
+	.feature-3 {
+		width: 50%;
+	}
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+	.page {
+		width: 960px;
+		margin: 0 auto;
+	}
+	.feature-1,
+	.feature-2,
+	.feature-3 {
+		width: 33.3%;
+	}
+	.header {
+		height: 400px;
+	}
+
+	.sign-up {
+		height: 200px;
+		order: 1;
+	}
+	.content {
+		order: 2;
+	}
+}
+
+/* Dessa CSS-regler behöver inte ändras */
 
 .menu {
 	background-color: #5995da;
@@ -68,45 +88,4 @@
 
 .feature-3 {
 	background-color: #c8c6fa;
-}
-
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-	body {
-		background-color: #f09a9d; /* Red */
-	}
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-	.sign-up,
-	.feature-1,
-	.feature-2,
-	.feature-3 {
-		width: 50%;
-	}
-}
-
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
-	.page {
-		width: 960px;
-		margin: 0 auto;
-	}
-	.feature-1,
-	.feature-2,
-	.feature-3 {
-		width: 33.3%;
-	}
-	.header {
-		height: 400px;
-	}
-	/* lägg till som sista steg */
-	.sign-up {
-		height: 200px;
-		order: 1;
-	}
-	.content {
-		order: 2;
-	}
 }

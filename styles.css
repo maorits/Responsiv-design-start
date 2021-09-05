@@ -5,8 +5,6 @@
 }
 
 .page {
-	display: flex;
-	flex-wrap: wrap;
 }
 
 .section {
@@ -17,6 +15,29 @@
 	align-items: center;
 }
 
+body {
+	background-color: coral;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 520px) {
+	body {
+	}
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 521px) and (max-width: 960px) {
+	body {
+	}
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+	body {
+	}
+}
+
+/* Dessa CSS-regler böhver inte ändras */
 .menu {
 	background-color: #5995da;
 	height: 80px;
@@ -45,25 +66,4 @@
 
 .feature-3 {
 	background-color: #c8c6fa;
-}
-
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-	body {
-		background-color: #f09a9d; /* Red */
-	}
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-	body {
-		background-color: #f5cf8e; /* Yellow */
-	}
-}
-
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
-	body {
-		background-color: #b2d6ff; /* Blue */
-	}
 }
