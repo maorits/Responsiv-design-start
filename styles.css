@@ -20,22 +20,13 @@ body {
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 520px) {
-	body {
-	}
-}
+/* Lägg till en @media regel som gäller för skärmar som är max 520px */
 
 /* Tablet Styles */
-@media only screen and (min-width: 521px) and (max-width: 960px) {
-	body {
-	}
-}
+/* Lägg till en @media regel som gäller för skärmar som är minst 520px och max 960px */
 
 /* Desktop Styles */
-@media only screen and (min-width: 961px) {
-	body {
-	}
-}
+/* Lägg till en @media regel som gäller för skärmar som är minst 960px */
 
 /* Dessa CSS-regler böhver inte ändras */
 .menu {
